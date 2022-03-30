@@ -11,7 +11,7 @@ client.once('ready', () => {
 });
 
 // Login to Discord with your client's token
-client.login(token);
+client.login();
 client.once('ready', () => {
 	console.log('Ready!');
 });
@@ -30,7 +30,7 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.login(token);
+client.login();
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 
